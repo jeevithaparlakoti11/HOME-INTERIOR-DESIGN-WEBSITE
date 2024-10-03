@@ -1,0 +1,219 @@
+
+
+
+.form-check-input {
+  margin-right: 6px;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  width: 50%;
+  margin: 10px auto;
+  border: 2px solid #ccc;
+}
+
+.list-group-item + .list-group-item {
+  border-top: 2px solid #ccc;
+}
+/*.row.justify-content-center {*/
+/*  width: 100%;*/
+/*}*/
+@media (max-width:500px) {
+    .list-group-item{
+    width: 70%;
+    }
+}
+.btn-next-red {
+  background-color: red;
+  color: white;
+  outline: none;
+}
+
+/* Remove blue outline when button is focused */
+.btn-next-red:focus {
+  outline: none;
+}
+
+/* Remove blue color on hover */
+.btn-next-red:hover {
+  background-color: red; /* You can keep the same color or change it if needed */
+  color: white;
+}
+
+.btn-counter {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 16px;
+    padding: 0;
+    /* Remove blue outline on button click */
+    outline: none;
+  }
+
+  /* Remove blue outline on button click */
+  .btn-counter:focus {
+    outline: none;
+  }
+
+  /* Customize hover effect */
+  .btn-counter:hover {
+    background-color: none;
+    color : white;
+    outline : none;
+    /* Adjust other styles as needed */
+  }
+
+  /* Center the counter value */
+  .counter-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .counter-value {
+    margin: 0 8px;
+  }
+.form-check-input {
+  margin-right: 6px;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  width: 80%;
+  margin: 10px auto;
+  border: 2px solid #ccc;
+}
+
+.list-group-item + .list-group-item {
+  border-top: 2px solid #ccc;
+}
+.row.justify-content-center {
+  width: 100%;
+  margin-left : 0px;
+  margin-rigth : 0px;
+}
+.btn-next-red {
+  background-color: red;
+  color: white;
+  outline: none;
+}
+
+
+/* Remove blue outline when button is focused */
+.btn-next-red:focus {
+  outline: none;
+}
+
+/* Remove blue color on hover */
+.btn-next-red:hover {
+  background-color: red; /* You can keep the same color or change it if needed */
+  color: white;
+}
+
+/* diffrent row data */
+
+.labels {
+	color: black;
+}
+
+.content-div2 {
+	display: none;
+}
+
+/* Media query for tablets (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-5 {
+    flex: 0 0 83.333333%; /* Adjust the width as needed */
+    max-width: 83.333333%;
+  }
+  .content-div2 {text-align : center;}
+}
+
+	@media (max-width: 800px) {
+		.content-div1 {
+			display: none;
+		}
+
+		.content-div2 {
+			display: block;
+		}
+
+		.content-div2 {
+			margin-top: 8rem;
+		}
+	}
+
+@media (max-width : 380px){
+    .list-group-item{
+        font-size : 10px;
+    }
+    .btn-counter{
+        font-size : 10px;
+    }
+}
+
+.content-div1 {
+	bottom: 0;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.content-div01{
+    display : none;
+}
+
+.sections {
+	background-image: url("/bb.png");
+	background-size: cover;
+	background-position: center center;
+}
+
+.store {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+	height: 100%;
+	min-height: 100vh;
+	/* Ensure the section takes at least the full viewport height */
+    padding: 2rem 0px 30px 0px;
+}
+	@media (max-width: 1000px) {
+.content-div1{
+    display : none;
+}
+	.content-div2 {
+			display: block;
+		}
+}
+	}
+
+
+
+
+.content-div h2 {
+	margin-top: 20px;
+	/* Add margin-top for the first div */
+}
+
+.content-color {
+	color: white;
+}
+
+.content-red {
+	color: red;
+}
+.content-div,
+.form-div {
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px;
+}
+

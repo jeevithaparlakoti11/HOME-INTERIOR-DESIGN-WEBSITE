@@ -1,0 +1,55 @@
+  function handleShowForm() {
+    var modal = document.getElementById("contactModals");
+    modal.style.display = "block";
+  }
+
+  // Function to close the modal
+  function handleCloseForm() {
+    var modal = document.getElementById("contactModals");
+    modal.style.display = "none";
+  }
+  
+  function showRooms() {
+  document.getElementById("roomList").style.display = "block";
+    document.getElementById("apartmentSelectionList").style.display = "none";
+    document.getElementById("quick-forms").style.display = "none";
+    document.getElementById("nextButton").style.display = "none";
+    document.getElementById("nextButtonForm").style.display = "block";
+  }
+  function showApartmentSelection() {
+    document.getElementById("roomList").style.display = "none";
+    document.getElementById("apartmentSelectionList").style.display = "block";
+    document.getElementById("quick-forms").style.display = "none";
+    document.getElementById("nextButton").style.display = "block";
+    document.getElementById("nextButtonForm").style.display = "none";
+  }
+  function showForm() {
+    document.getElementById("roomList").style.display = "none";
+    document.getElementById("apartmentSelectionList").style.display = "none";
+    document.getElementById("quick-forms").style.display = "block";
+    document.getElementById("nextButton").style.display = "none";
+    document.getElementById("nextButtonForm").style.display = "none";
+  }
+  function incrementCounter(room) {
+    var counterElement = document.getElementById(room + "Counter");
+    var count = parseInt(counterElement.innerHTML);
+    counterElement.innerHTML = count + 1;
+  }
+  function decrementCounter(room) {
+    var counterElement = document.getElementById(room + "Counter");
+    var count = parseInt(counterElement.innerHTML);
+    if (count > 0) {
+      counterElement.innerHTML = count - 1;
+    }
+  }
+  function validateForm() {
+    var name = document.forms["myForm"]["clientname"].value;
+    var email = document.forms["myForm"]["email"].value;
+    var phone = document.forms["myForm"]["phone"].value;
+  
+    if (name === "" || email === "" || phone === "") {
+      alert("Please fill in all the required fields.");
+      return false;
+    }
+    return true;
+  }
